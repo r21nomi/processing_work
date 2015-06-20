@@ -8,7 +8,7 @@ class Connection {
   }
   
   void display() {
-    stroke(100);
+    stroke(255);
     line(p1.getLocation().x, p1.getLocation().y, p2.getLocation().x, p2.getLocation().y);
   }
 }
