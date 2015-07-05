@@ -1,37 +1,41 @@
 import antlr.collections.List;
 
-color BACKGROUND_COLOR = color(255);
-color PGRAPHICS_COLOR = color(0);
-ArrayList<Particle> particles = new ArrayList();
-String text = "proce55ing";
+color BACKGROUND_COLOR = color(0);
+color PGRAPHICS_COLOR = color(255);
+ArrayList<Particle> particles;
+String source = "";
 int gridX = 80;
-int gridY = 50; 
+int gridY = 50;
 
 PGraphics pg;
 
 void setup() {
   size(displayWidth, displayHeight);
   background(BACKGROUND_COLOR);
-  colorMode(HSB, 360, 100, 100); // change to Hue-Saturation-Brightness color mode
   rectMode(CENTER);
   
-  float textSize = map(width / text.length(), width, width / 8, 800, 250);
+  initPGraphics();
+  initParticles();
+}
+
+void initPGraphics() {
+  float size = source.length() != 0 ? width / source.length() : width;
+  float textSize = map(size, width, width / 8, 800, 250);
 
   pg = createGraphics(width, height, JAVA2D);
   pg.beginDraw();
   pg.textSize(textSize);
   pg.textAlign(CENTER, CENTER);
   pg.fill(PGRAPHICS_COLOR);
-  pg.text(text, pg.width/2, pg.height/2); 
+  pg.text(source, pg.width/2, pg.height/2); 
   pg.endDraw();
   
   gridX = (int)map(pg.textSize, 800, 250, 200, 200);
   gridY = (int)map(pg.textSize, 800, 250, 150, 150);
-  
-  initParticles();
 }
 
 void initParticles() {
+  particles = new ArrayList();
   float w = float(width) / gridX;
   float h = float(height) / gridY;
   
@@ -72,10 +76,22 @@ void draw() {
       float dist = baseLocation.dist(targetLocation);
       
       if (dist != 0 && dist < 10) {
-        stroke(0, 100);
+        stroke(255, 100);
         strokeWeight(1);
         line(baseLocation.x, baseLocation.y, targetLocation.x, targetLocation.y);
       }
     }
   }
+}
+
+void keyPressed() {  
+  if(key == BACKSPACE) {
+    if(source.length() > 0) {
+      source = source.substring(0, source.length() - 1);
+    }
+  } else {
+    source += key;
+  }
+  initPGraphics();
+  initParticles();
 }
