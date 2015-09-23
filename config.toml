@@ -1,0 +1,5 @@
+baseurl = "http://nomi1126.github.io/processing_work"
+# baseurl = ""
+languageCode = "en-us"
+title = "Processing Work"
+theme = "custom"

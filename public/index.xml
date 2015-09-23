@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Processing Work</title>
+    <link>http://nomi1126.github.io/processing_work/</link>
+    <description>Recent content on Processing Work</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Sep 2015 19:56:14 +0900</lastBuildDate>
+    <atom:link href="http://nomi1126.github.io/processing_work/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About Face</title>
+      <link>http://nomi1126.github.io/processing_work/post/2015/aboutFace/</link>
+      <pubDate>Wed, 23 Sep 2015 19:56:14 +0900</pubDate>
+      
+      <guid>http://nomi1126.github.io/processing_work/post/2015/aboutFace/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../../images/aboutFace.gif&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+&lt;a href=&#34;https://github.com/nomi1126/processing_work/tree/master/2015_09_23_atan/atan&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>wave</title>
+      <link>http://nomi1126.github.io/processing_work/post/2015/wave/</link>
+      <pubDate>Tue, 22 Sep 2015 21:33:47 +0900</pubDate>
+      
+      <guid>http://nomi1126.github.io/processing_work/post/2015/wave/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../../images/wave.gif&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+&lt;a href=&#34;https://github.com/nomi1126/processing_work/tree/master/2015_09_13_wave/wave_2&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>waveform</title>
+      <link>http://nomi1126.github.io/processing_work/post/2015/waveform/</link>
+      <pubDate>Mon, 21 Sep 2015 21:12:41 +0900</pubDate>
+      
+      <guid>http://nomi1126.github.io/processing_work/post/2015/waveform/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../../images/waveform.gif&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+&lt;a href=&#34;https://github.com/nomi1126/processing_work/tree/master/2015_09_13_waveform/waveform&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>formChangesDensity</title>
+      <link>http://nomi1126.github.io/processing_work/post/2015/formChangesDensity/</link>
+      <pubDate>Sun, 20 Sep 2015 21:35:13 +0900</pubDate>
+      
+      <guid>http://nomi1126.github.io/processing_work/post/2015/formChangesDensity/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../../images/formChangesDensity.gif&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+OpenProcessing Tweat of &lt;a href=&#34;http://www.openprocessing.org/sketch/100821&#34;&gt;http://www.openprocessing.org/sketch/100821&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/nomi1126/processing_work/tree/master/2015_09_13_form_changes_density/formChangesDensity&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>movingParticle</title>
+      <link>http://nomi1126.github.io/processing_work/post/2015/movingParticle/</link>
+      <pubDate>Sat, 19 Sep 2015 21:39:46 +0900</pubDate>
+      
+      <guid>http://nomi1126.github.io/processing_work/post/2015/movingParticle/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../../images/movingParticle.gif&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+&lt;a href=&#34;https://github.com/nomi1126/processing_work/tree/master/2015_07_31_moving_particle/movingParticle&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>delaunayTriangle</title>
+      <link>http://nomi1126.github.io/processing_work/post/2015/delaunayTriangle/</link>
+      <pubDate>Fri, 18 Sep 2015 21:41:26 +0900</pubDate>
+      
+      <guid>http://nomi1126.github.io/processing_work/post/2015/delaunayTriangle/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../../images/delaunayTriangle.gif&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+&lt;a href=&#34;https://github.com/nomi1126/processing_work/tree/master/2015_08_06_delaunayTriangulation&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>eye</title>
+      <link>http://nomi1126.github.io/processing_work/post/2015/eye/</link>
+      <pubDate>Thu, 17 Sep 2015 21:40:55 +0900</pubDate>
+      
+      <guid>http://nomi1126.github.io/processing_work/post/2015/eye/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../../images/eye.gif&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+&lt;a href=&#34;https://github.com/nomi1126/processing_work/tree/master/2015_06_21_eye/eye&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>spider</title>
+      <link>http://nomi1126.github.io/processing_work/post/2015/spider/</link>
+      <pubDate>Wed, 16 Sep 2015 21:39:17 +0900</pubDate>
+      
+      <guid>http://nomi1126.github.io/processing_work/post/2015/spider/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../../images/spider.gif&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+&lt;a href=&#34;https://github.com/nomi1126/processing_work/tree/master/2015_06_18_spider/spider&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>transform</title>
+      <link>http://nomi1126.github.io/processing_work/post/2015/transform/</link>
+      <pubDate>Tue, 15 Sep 2015 21:38:42 +0900</pubDate>
+      
+      <guid>http://nomi1126.github.io/processing_work/post/2015/transform/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../../images/transform.gif&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+&lt;a href=&#34;https://github.com/nomi1126/processing_work/tree/master/2015_05_17_image_transform/image_transform&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>fluidresistance</title>
+      <link>http://nomi1126.github.io/processing_work/post/2015/fluidresistance/</link>
+      <pubDate>Mon, 14 Sep 2015 21:40:21 +0900</pubDate>
+      
+      <guid>http://nomi1126.github.io/processing_work/post/2015/fluidresistance/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../../images/fluidresistance.gif&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+&lt;a href=&#34;https://github.com/nomi1126/processing_work/tree/master/2015_05_24_fluidresistance/fluidresistance&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

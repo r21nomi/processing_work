@@ -1,0 +1,13 @@
+{{ partial "head.html" . }}
+<main class="posts">
+  <article class="post">
+    {{ range .Data.Pages }}
+    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    {{ if isset .Params "image" }}
+        <img src="{{ .Site.BaseURL }}/images/{{ .Params.image }}" alt="{{ .Title }}">
+    {{ end }}
+    <p class="small"><a href="{{ .Permalink }}">Read More »</a></p>
+    {{ end }}
+  </article>
+</main>
+{{ partial "foot.html" . }}
