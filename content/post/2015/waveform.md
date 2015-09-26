@@ -1,6 +1,6 @@
 +++
 date = "2015-09-21T21:12:41+09:00"
-image = "../../../images/waveform.gif"
+image = "waveform.gif"
 title = "waveform"
 
 +++

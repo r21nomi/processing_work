@@ -1,6 +1,6 @@
 +++
 date = "2015-09-20T21:35:13+09:00"
-image = "../../../images/formChangesDensity.gif"
+image = "formChangesDensity.gif"
 title = "formChangesDensity"
 
 +++
