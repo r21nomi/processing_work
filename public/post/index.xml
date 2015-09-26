@@ -6,8 +6,22 @@
     <description>Recent content in Posts on Processing Work</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Sep 2015 19:56:14 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2015 12:00:13 +0900</lastBuildDate>
     <atom:link href="http://nomi1126.github.io/processing_work/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Animation Text</title>
+      <link>http://nomi1126.github.io/processing_work/post/2015/animationText/</link>
+      <pubDate>Sat, 26 Sep 2015 12:00:13 +0900</pubDate>
+      
+      <guid>http://nomi1126.github.io/processing_work/post/2015/animationText/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../../images/animationText.gif&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+スタイルだけでなく動きでデザインを変えるカスタムフォントのテスト。&lt;br /&gt;
+パーティクルが動くアルファベットをタイプできるテキストエディタ的なものにしてみた。&lt;br /&gt;
+&lt;a href=&#34;https://github.com/nomi1126/processing_work/tree/master/2015_07_05_animationText/animationText&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>About Face</title>
