@@ -1,5 +1,3 @@
-import antlr.collections.List;
-
 color BACKGROUND_COLOR = color(0);
 color PGRAPHICS_COLOR = color(255);
 ArrayList<Particle> particles;
