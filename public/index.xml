@@ -6,8 +6,20 @@
     <description>Recent content on Processing Work</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Sep 2015 12:00:13 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2015 02:13:14 +0900</lastBuildDate>
     <atom:link href="http://nomi1126.github.io/processing_work/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cyclone</title>
+      <link>http://nomi1126.github.io/processing_work/post/2015/cyclone/</link>
+      <pubDate>Mon, 28 Sep 2015 02:13:14 +0900</pubDate>
+      
+      <guid>http://nomi1126.github.io/processing_work/post/2015/cyclone/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../../images/cyclone.gif&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+&lt;a href=&#34;https://github.com/nomi1126/processing_work/tree/master/2015_09_27_cyclone/cyclone&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Animation Text</title>
