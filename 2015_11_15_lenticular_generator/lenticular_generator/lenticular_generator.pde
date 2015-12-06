@@ -1,6 +1,6 @@
 ArrayList<PImage> images = new ArrayList();
 ArrayList<int[][]> valueList = new ArrayList();
-int ORIGIN_LINE_WIDTH = 1;
+int ORIGIN_LINE_WIDTH = 3;
 int lineWidth = 0;
 int distance = 0;
 
@@ -8,9 +8,9 @@ void setup() {
   size(displayWidth, displayHeight);
   noFill();
   
-  images.add(loadImage("image.jpg"));
-  images.add(loadImage("image_3.jpg"));
+  images.add(loadImage("image_1.jpg"));
   images.add(loadImage("image_2.jpg"));
+  images.add(loadImage("image_3.jpg"));
   
   for (PImage image : images) {
     image.loadPixels();
@@ -32,6 +32,7 @@ void setup() {
 
 void draw() {
   background(0);
+  scale(1);
   //translate(width/2, height/2);
   
   for (int imageCount = 0, len = images.size(); imageCount < len; imageCount++) {

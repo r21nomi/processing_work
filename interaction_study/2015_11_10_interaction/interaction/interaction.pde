@@ -9,7 +9,7 @@ float[] speedY = new float[numObj];
 ArrayList<Ball> balls = new ArrayList();
  
 void setup(){
-  size(600, 600);
+  size(1000, 200);
   background(0);
   smooth();
    
