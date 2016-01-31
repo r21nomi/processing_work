@@ -1,13 +1,12 @@
-ArrayList<Spring2D> springs = new ArrayList();
+ArrayList<FixedSpring> springs = new ArrayList();
 float mass = 2.0;
 float gravity = 5.0;
-
 
 void setup() {
   size(800, 800);
   
   for (int i = 0; i < 10; i++) {
-    Spring2D spring = new Spring2D(width / 2, i * (height / 10), mass, gravity);
+    FixedSpring spring = new FixedSpring(width / 2, i * (height / 10), mass, gravity, 10);
     springs.add(spring);
   }
 }

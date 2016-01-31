@@ -29,6 +29,7 @@ class Spring2D {
   
   void display(float nx, float ny) {
     noStroke();
+    fill(0);
     ellipse(x, y, radius * 2, radius * 2);
     stroke(255);
     line(x, y, nx, ny);
