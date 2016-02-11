@@ -12,6 +12,7 @@ float distX, distY = 0.0;
 float radius = 40;
 float elapsedTime = 0;
 float totalDuration = 500;
+boolean isCalcultingFormulaMode = false;
 
 ControlP5 cp5;
 Slider durationSlider;
@@ -34,16 +35,23 @@ void draw() {
   if (elapsedTime < getDuration()) {
     elapsedTime += (ONE_MS / frameRate);
     
-    float rate = getRate(getNormalizedCurrentTime());
-    currentX = beginX + (rate * distX);
-    currentY = beginY + (rate * distY);
+    if (isCalcultingFormulaMode) {
+      currentX = getCalcultingFormula(beginX, distX);
+      currentY = getCalcultingFormula(beginY, distY);
+      
+    } else {
+      float rate = getRate(getNormalizedCurrentTime());
+      currentX = beginX + (rate * distX);
+      currentY = beginY + (rate * distY);
+    }
   }
   
-  fill(#ff0000);
+  fill(#ffcc00);
   ellipse(currentX, currentY, radius, radius);
   
   fill(#ffffff);
-  text("currentEasingMode:" + currentEasingMode, 20, 80);
+  text(isCalcultingFormulaMode ? "calculting formula mode" : "exponent function mode", 20, 80);
+  text("currentEasingMode:" + currentEasingMode, 20, 100);
 }
 
 void mouseReleased() {
@@ -58,6 +66,10 @@ void mouseReleased() {
 
 void keyPressed() {
   switch(key) {
+    case ' ':
+    isCalcultingFormulaMode = !isCalcultingFormulaMode;
+    break;
+    
     case '1':
       currentEasingMode = 1;
       break;
@@ -76,6 +88,25 @@ void keyPressed() {
       
     default:
       currentEasingMode = 0;
+  }
+}
+
+float getCalcultingFormula(float startVal, float difference) {
+  switch(currentEasingMode) {
+    case 1:
+      return easeInQuad(elapsedTime, startVal, difference, getDuration());
+      
+    case 2:
+      return easeOutQuad(elapsedTime, startVal, difference, getDuration());
+      
+    case 3:
+      return easeInOutQuad(elapsedTime, startVal, difference, getDuration());
+      
+    case 4:
+      return easeInCubic(elapsedTime, startVal, difference, getDuration());
+      
+    default:
+      return linearTween(elapsedTime, startVal, difference, getDuration());
   }
 }
 
@@ -111,4 +142,38 @@ float getDuration() {
  */
 float getNormalizedCurrentTime() {
   return norm(elapsedTime, 0, getDuration());
+}
+
+/**
+ * @param t current time
+ * @param b initial value
+ * @param c difference between and start value end value
+ * @param d duration 
+ *
+ * @See http://gizma.com/easing/
+ */
+float linearTween(float t, float b, float c, float d) {
+  return c*t/d + b;
+}
+
+float easeInQuad(float t, float b, float c, float d) {
+  t /= d;
+  return c*t*t + b;
+}
+
+float easeOutQuad(float t, float b, float c, float d) {
+  t /= d;
+  return -c * t*(t-2) + b;
+}
+
+float easeInOutQuad(float t, float b, float c, float d) {
+  t /= d/2;
+  if (t < 1) return c/2*t*t + b;
+  t--;
+  return -c/2 * (t*(t-2) - 1) + b;
+}
+
+float easeInCubic(float t, float b, float c, float d) {
+  t /= d;
+  return c*t*t*t + b;
 }
