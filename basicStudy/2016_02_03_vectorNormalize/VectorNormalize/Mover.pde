@@ -1,3 +1,7 @@
+/**
+ * Do not use PVector
+ * FIXME：thre is a bug that the speed is different from VectorMover's
+ */
 class Mover {
   float x, y;
   float speedX, speedY;

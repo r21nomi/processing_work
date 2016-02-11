@@ -5,7 +5,7 @@ float distX, distY = 0.0;
 float easing = 0.1;
 float radius = 40;
 float exponent = 4.0;
-float step = 0.02;
+float step = 0.01;
 float pct = 0.0;
 int currentEasingMode = 0;
 
@@ -17,7 +17,7 @@ void draw() {
   fill(0, 100);
   rect(0, 0, width, height);
   
-  if (pct < 1.0) {
+  if (pct <= 1.0) {
     pct += step;
     float rate = getRate(pct);
     currentX = beginX + (rate * distX);

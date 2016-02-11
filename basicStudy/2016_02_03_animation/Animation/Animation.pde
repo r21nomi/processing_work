@@ -1,9 +1,12 @@
+static final float FPS = 60;
+static final float ONE_MS = 1000;
 float targetX, targetY = 0;
 float x, y = 0;
 float currentTime = 0;
-float time = 2000;
+float totalTime = 2000;
 
 void setup() {
+  frameRate(FPS);
   size(800, 800);
 }
 
@@ -11,16 +14,16 @@ void draw() {
   fill(0);
   rect(0, 0, width, height);
   
-  if (currentTime > time) {
-    return; 
+  if (currentTime < totalTime) {
+    float rate = getEasing();
+    float _x = x + targetX * rate;
+    float _y = y + targetY * rate;
+    
+    fill(255);
+    ellipse(_x, _y, 10, 10);
+    
+    currentTime += (ONE_MS / frameRate);  // if FPS is 60, (ONE_MS / FPS) will be 16.6.
   }
-  
-  float rate = getEasing();
-  
-  fill(255);
-  ellipse(x + targetX * rate, y + targetY * rate, 10, 10);
-  
-  currentTime += 16.6;  // 1000 ms / 60 frame
 }
 
 void mouseReleased() {
@@ -30,5 +33,13 @@ void mouseReleased() {
 }
 
 float getEasing() {
-  return pow(currentTime / 1000 / (time / 1000), 4);
+  return pow(getNormalizedCurrentTime(), 4);
+  //return pow(currentTime / ONE_MS / (totalTime / ONE_MS), 4);
+}
+
+/**
+ * Convert the range of currentTime from (0 ~ totalTime) to (0.0 ~ 1.0).
+ */
+float getNormalizedCurrentTime() {
+  return norm(currentTime, 0, totalTime);
 }

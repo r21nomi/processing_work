@@ -1,3 +1,6 @@
+/**
+ * Use PVector
+ */
 class VectorMover {
   PVector location;
   PVector velocity;
