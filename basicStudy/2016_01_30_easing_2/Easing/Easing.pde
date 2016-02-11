@@ -23,7 +23,7 @@ void setup() {
   
   cp5 = new ControlP5(this);
   durationSlider = cp5.addSlider(DURATION_SLIDER_NAME);
-  durationSlider.setPosition(20,20).setSize(100,20);
+  durationSlider.setPosition(20, 20).setSize(100, 20);
 }
 
 void draw() {
@@ -51,7 +51,8 @@ void draw() {
   
   fill(#ffffff);
   text(isCalcultingFormulaMode ? "calculting formula mode" : "exponent function mode", 20, 80);
-  text("currentEasingMode:" + currentEasingMode, 20, 100);
+  text("currentEasingMode : " + currentEasingMode, 20, 100);
+  text("duration : " + getDuration() + "ms", 20, 120);
 }
 
 void mouseReleased() {
