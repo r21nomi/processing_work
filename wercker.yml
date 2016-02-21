@@ -12,5 +12,5 @@ deploy:
 
     - lukevivier/gh-pages@0.2.1:
       token: $GIT_TOKEN
-      domain: nomi1126.github.io
+      domain: r21nomi.github.io
       basedir: public
