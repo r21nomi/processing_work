@@ -43,12 +43,12 @@ class Blob {
   
   void draw() {
     fill(col);
-    stroke(0);
-    strokeWeight(5);
-    
+    noStroke();;
     pushMatrix();
     
     translate(originX, originY);
+    
+    rotate(radians(frameCount * 2));
     
     // Shape
     beginShape();
