@@ -1,5 +1,6 @@
 static final int ITEM_COUNT_ON_LINE = 8;
 static final int VERTEX_COUNT = 10;
+static final int ITEM_PADDING = 5;
 float originX;
 float originY;
 ArrayList<Blob> blobs = new ArrayList();
@@ -16,7 +17,7 @@ void setup() {
   for (int i = 0, len = ITEM_COUNT_ON_LINE * vertical_line; i < len; i++) {
     Blob blob = new Blob(
       VERTEX_COUNT,
-      radius,
+      radius - ITEM_PADDING,
       color(0),
       1.6,
       0.2,
