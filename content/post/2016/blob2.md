@@ -1,7 +1,7 @@
 +++
 date = "2016-04-30T14:32:39+09:00"
 image = "blob2.gif"
-title = "blob2"
+title = "Blob2"
 
 +++
 
