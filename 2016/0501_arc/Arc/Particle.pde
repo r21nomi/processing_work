@@ -16,8 +16,8 @@ class Particle {
     currentDegree += 3;
     if (currentDegree - startDegree < 360) {
       float val = easeInOutExpo(map(currentDegree - startDegree, 0, 360, 0, 1));
-      location.x = radius * cos(radians(startDegree) * val);
-      location.y = radius * sin(radians(startDegree) * val);
+      location.x = radius * val * cos(radians(startDegree) * val);
+      location.y = radius * val * sin(radians(startDegree) * val);
     }
   }
   
