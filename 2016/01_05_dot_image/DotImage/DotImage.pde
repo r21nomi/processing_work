@@ -1,4 +1,4 @@
-private static final float STEP = 8;
+private static final float STEP = 7;
 private PImage mImage;
 private ArrayList<Dot> mDots = new ArrayList();
 

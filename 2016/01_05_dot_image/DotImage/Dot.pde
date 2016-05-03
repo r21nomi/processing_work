@@ -17,7 +17,7 @@ class Dot {
   }
   
   public void display() {
-    fill(mColor, 100);
+    fill(mColor, 180);
     ellipse(mPosition.x + (cos(frameCount * mDuration) * 2),
             mPosition.y + (sin(frameCount * mDuration) * 2),
             mRadius,
