@@ -22,7 +22,7 @@ void setup() {
       1.6,
       0.2,
       radius + radius * 2 * (i % ITEM_COUNT_ON_LINE),
-      radius + radius * 2 * (i / ITEM_COUNT_ON_LINE)
+      radius + radius * 2 * (int)(i / ITEM_COUNT_ON_LINE)
     );
     blobs.add(blob);
   }
